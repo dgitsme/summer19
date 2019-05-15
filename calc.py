@@ -2,13 +2,13 @@
 
 print("WELCOME TO BASIC CALCULATOR OF TWO NUMBERS")
 print("Enter the Two numbers for calculation")
-a=int(input())
-b=int(input())
+a=float(input())
+b=float(input())
 
 print("Choose one of the following operations to perform:")
 
-print("1.ADD/2.SUBTRACT/3.MULTIPLY/4.DIVIDE")
-c=int(input())
+print("1.ADD 2.SUBTRACT 3.MULTIPLY 4.DIVIDE")
+c=float(input())
 
 def choice(c):
    switcher ={ 
@@ -18,6 +18,6 @@ def choice(c):
       4: a/b,
    }
    return switcher.get(c,"wrong choice")
-print("Your answer is" + str(choice(c)))
+print("Your answer is " + str(choice(c)))
 
 
